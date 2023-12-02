@@ -1,0 +1,390 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        header {
+            background-image: url('cups1.jpg');
+            background-size: 10200px;
+            color: rgb(0, 0, 0);
+            padding: 10px;
+            text-align: center;
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #000000;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .service-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+
+        .service-card h3 {
+            color: #333;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .eco {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 1px solid #000000;
+            border-radius: 20px;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            background-color: #ddd;
+            text-align: center;
+
+        }
+
+
+
+        .form-class-ed {
+
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+
+        }
+
+        .com-em {
+
+            max-width: 800px;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+
+
+        h2 {
+            color: #350a0a;
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ol {
+            list-style-type: none;
+            counter-reset: myCounter;
+            color: #000000;
+        }
+
+        li {
+            counter-increment: myCounter;
+            color: #000000;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        li::before {
+            content: counter(myCounter);
+            margin-right: 10px;
+            font-weight: bold;
+            color: #000000;
+        }
+
+
+
+
+        form {
+            align-items: center;
+            margin-top: 30px;
+            max-width: 600px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .welcome-text {
+            text-align: center;
+            margin: 0 auto;
+            background-color: beige;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-size-adjust: 10mm;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img class="about-us-img" src="com-logo.png" alt="logo" width="100"
+            height="100">
+        <h1>Our Services</h1>
+
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+
+        </nav>
+    </header>
+
+    <div class="welcome-text">
+        <h3>Welcome to Co-Shell</h3>
+        <h4>"Discover Nature's Elegance: Unveiling Co-Shell's Exquisite Range of Coconut Shell Products and Services!"
+        </h4>
+
+    </div>
+
+    <section style="background-image: 
+   url(coconut-palm.jpg);
+   background-attachment: fixed; background-repeat: no-repeat; background-size:cover;">
+        <div class="eco">
+
+            <h1>Sustainable Product Development for Coconut Shell Products</h1>
+
+            <p>Coconut shells, often considered waste, present a valuable opportunity for sustainable product
+                development. By repurposing coconut shells into various products, we contribute to environmental
+                conservation and create eco-friendly alternatives. Here's how we approach sustainable product
+                development:</p>
+        </div>
+
+        <section>
+            <div class="eco">
+                <h2> Material Sourcing</h2>
+                <img src="C:\Users\VT\Desktop\pkweb\images\VNM0560.jpg" width="800" height="500"
+                    style="border-radius: 20px; border-color: #d8d5d58d; border-style:outset;border-width:5px;">
+                <p>We carefully select coconut shells from sustainable sources, ensuring minimal environmental impact.
+                    This ethical approach supports local communities involved in the coconut industry.</p>
+                <img src="C:\Users\VT\Desktop\pkweb\images\pro-7937283723.jpg" width="800" height="500"
+                    style=" border-radius:20px; border-color: #d8d5d58d; border-style:outset;border-width:5px;">
+                <p>The coconuts collected are of different sizes. A mature coconut is chosen because it is lignin,
+                    eliminating any chances of germs breeding. The kernel part is removed and is cleaned to get the
+                    shell.
+
+                    The shell is sanded several times to get a smooth finish. After they are sanded, the shells are cut
+                    into desired shapes and sizes with the help of a coping saw. The design is marked with a marker and
+                    then the coping saw is used to create designs on the coconut shell. </p>
+                <h2></h2> Design Innovation</h2>
+                <img src="C:\Users\VT\Desktop\pkweb\images\coconut-shell-carving-2-768x518.jpg"
+                    style=" border-radius:20px; border-color: #d8d5d58d; border-style:outset;border-width:5px;">
+                <p>Our design process focuses on creating functional and aesthetically pleasing products from coconut
+                    shells. We explore the versatility of the material to produce items ranging from kitchenware to
+                    decorative pieces.</p>
+            </div>
+        </section>
+        <div class="eco">
+            <h2>Environmental Impact Assessment</h2>
+            <p>Before introducing a new product, we conduct thorough assessments to understand its environmental impact.
+                This includes considering the entire lifecycle, from raw material extraction to end-of-life disposal.
+            </p>
+            <img src="C:\Users\VT\Desktop\pkweb\images\1000_F_379879897_d4iVBViWIanpfMismFGCCa0ToEKBCipf.jpg"
+                width="375" height="350"
+                style=" border-radius:20px; border-color: #d8d5d58d; border-style:outset;border-width:5px;">
+            <p>Sustainable living is by no means easy. As we’ve gotten used to purchasing plastic items and other
+                products made from artificial chemicals, it tends to be difficult to live a life without these
+                purchases. However, there’s one way to make living sustainably easier, and it starts with choosing
+                sustainable products, just like coconut bowls. <br>By surrounding yourself with sustainable choices, you
+                can transform your environment into a more sustainable.
+                This results in a change of your identity and, in turn, your lifestyle.<br> That is because your
+                environment can influence the decisions you make and the habits you create.<br><b>when your home
+                    environment is filled with eco-friendly products like coconut bowls,
+                    you can be a lot more motivated to live a totally eco-friendly and sustainable lifestyle.</p>
+        </div>
+
+
+        <div class="eco">
+            <h2>Eco-Friendly Packaging</h2>
+            <p>packaging that is easy to recycle and made from materials manufactured using minimal impact on energy
+                consumption or natural resources</p>
+            <img src="C:\Users\VT\Desktop\pkweb\images\images (6).jpg" width="200" height="200"
+                style="border-radius: 20px; border-color: #d8d5d58d; border-style:outset;border-width:5px;">
+
+            <p>Our commitment to sustainability extends to packaging. We use eco-friendly materials and minimalistic
+                designs to reduce packaging waste, ensuring a holistic approach to environmental responsibility.</p>
+        </div>
+
+
+        <div class="eco">
+            <h2> Community Engagement Programs </h2>
+            <p>We actively engage with local communities, promoting fair trade practices and supporting economic
+                well-being through coconut-related initiatives.</p>
+            <img src="C:\Users\VT\Desktop\pkweb\images\com-em.jpg">
+            <h1>Community Engagement Programs for Coconut Shell Products</h1>
+
+            <p>Community engagement programs play a pivotal role in promoting sustainable practices and economic
+                development through the utilization of coconut shell products. These initiatives aim to empower local
+                communities, foster creativity, and raise awareness about the environmental benefits of embracing
+                eco-friendly alternatives.</p>
+
+            <h2>Program Highlights:</h2>
+
+            <ol>
+                <li><strong>Hands-On Workshops:</strong> Interactive workshops to showcase the versatility of coconut
+                    shells, encouraging community members to create various products.</li>
+                <li><strong>Sustainable Entrepreneurship:</strong> Empowering local artisans by providing skills and
+                    resources to start small businesses centered around coconut shell creations.</li>
+                <li><strong>Environmental Awareness Campaigns:</strong> Spreading awareness about the environmental
+                    impact of traditional materials and the benefits of using coconut shells.</li>
+                <li><strong>Community Collaboration:</strong> Collaborating with local residents to integrate
+                    traditional craftsmanship into the production process, preserving cultural heritage.</li>
+                <li><strong>Economic Opportunities:</strong> Creating sustainable employment opportunities within the
+                    community through the production and sale of coconut shell products.</li>
+                <li><strong>Education and Skill Development:</strong> Providing educational resources and skill
+                    development programs to enhance the capabilities of community members involved in coconut product
+                    development.</li>
+            </ol>
+
+            <p>Through these community engagement programs, we aim to not only promote sustainable practices but also
+                contribute to the socio-economic development of local communities. Join us in this journey towards a
+                greener and more prosperous future!</p>
+
+        </div>
+
+        <div class="eco">
+            <h2>4. Educational Workshops and Awareness Campaigns</h2>
+            <ol>
+                <li>Educational workshops and awareness campaigns for coconut shell products play a crucial role in
+                    promoting sustainability, environmental consciousness, and the utilization of natural resources.
+                    These initiatives aim to enlighten individuals about the numerous possibilities that arise from
+                    repurposing coconut shells, turning what might be considered waste into valuable and eco-friendly
+                    commodities.</li>
+                <li>Workshops provide a hands-on experience, demonstrating the diverse applications of coconut shells,
+                    ranging from artisanal crafts to practical household items. Participants get the chance to explore
+                    their creativity while learning about the environmental benefits of utilizing coconut shells instead
+                    of resorting to conventional materials.</li>
+                <li>Awareness campaigns complement these workshops by disseminating information on the environmental
+                    impact of waste, specifically highlighting the issues related to non-biodegradable materials. By
+                    showcasing the versatility of coconut shells, these campaigns inspire individuals to make conscious
+                    choices in their daily lives, fostering a mindset of sustainability.</li>
+                <li>The educational aspect of these initiatives emphasizes the importance of responsible consumption and
+                    waste reduction. Participants discover how coconut shell products contribute to the circular economy
+                    by minimizing the environmental footprint associated with traditional manufacturing processes.</li>
+                <li>Furthermore, these workshops and campaigns shed light on the economic opportunities linked to the
+                    coconut industry. By encouraging the production and sale of coconut shell products, local
+                    communities can benefit economically while simultaneously promoting environmentally friendly
+                    practices.</li>
+                <li>In essence, educational workshops and awareness campaigns for coconut shell products serve as
+                    catalysts for change, sparking a shift towards sustainable living. Through hands-on learning and
+                    impactful messaging, these initiatives empower individuals to make informed choices that benefit
+                    both the planet and local economies.</li>
+            </ol>
+        </div>
+
+
+        <section>
+            <div class="form-class-ed">
+                <form action="#" method="post">
+                    <h2>Contact Us:</h2>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Submit Inquiry</button>
+                </form>
+            </div>
+        </section>
+
+
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Co-Shell</p>
+    </footer>
+
+</body>
+
+</html>

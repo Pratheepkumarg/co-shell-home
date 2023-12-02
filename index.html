@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Co-Shell.com</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    header {
+      background-image: url('cups1.jpg');
+      background-size: 10200px;
+      color: #000000;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: hsl(0, 0%, 0%);
+    }
+
+    .hero {
+
+      background-size: cover;
+      background-color: #f4f5f4;
+      background-position: center;
+      /*Nature's Elegance Crafted in Coconut Shells  .-----------------color */
+      color: #000000;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h2 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 40px;
+    }
+
+    .hero-btn {
+      display: inline-block;
+      background-image: url('cups1.jpg');
+      background-size: 10000px;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      text-decoration: none;
+      color: #0c0101;
+      background-color: #80f184;
+      border: #043416;
+      border-radius: 10px;
+      border-style: outset;
+      transition: background-color 0.3s;
+    }
+
+    .hero-btn:hover {
+      background-color: #ffd700;
+    }
+
+    .product-showcase {
+      background-color: #fff;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .product-card {
+      margin: 20px;
+      padding: 20px;
+      background-color: #f5f5f5;
+      border-radius: 30px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      border-radius: 30px;
+      margin-bottom: 15px;
+    }
+
+    .product-card h3 {
+      font-size: 1.5em;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+
+    .product-card p {
+      font-size: 1.2em;
+      border-radius: 20px;
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    .product-card .price {
+      font-size: 1.5em;
+      color: #4CAF50;
+      font-weight: bold;
+    }
+
+    .storytelling {
+      background-color: #ffd700;
+      color: #050000;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .storytelling h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .storytelling p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      margin-bottom: 40px;
+    }
+
+    .storytelling-video {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .benefits {
+      backface-visibility: visible;
+      background-image: url('coconut-with-beach.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      color: #000802;
+      text-align: center;
+      background-repeat: no-repeat;
+      background-size: cover
+    }
+
+    .benefits h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .benefit-item {
+      display: flex;
+      margin-bottom: 30px;
+    }
+
+    .benefit-icon {
+      font-size: 3em;
+      margin-right: 20px;
+    }
+
+    .benefit-text {
+      text-align: left;
+      max-width: 600px;
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+
+    .cta {
+      background-color: #ffd700;
+      color: #000000;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .cta-text {
+      font-size: 1.2em;
+      line-height: 1.6;
+
+
+
+      margin-bottom: 30px;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background-image: url('cups1.jpg');
+      background-size: 10000px;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      text-decoration: none;
+      color: #0f0101;
+      background-color: #8df190;
+      border-radius: 10px;
+
+      transition: background-color 0.3s;
+    }
+
+    .cta-btn:hover {
+      background-color: #ffd700;
+    }
+
+    .about-us {
+      background-image: url('cups1.jpg');
+      background-size: 19090px;
+      color: #080000;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .about-us h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .about-us-text {
+      text-shadow: #cfe0d5;
+      color: #100000;
+      max-width: 1000px;
+      margin: 0 auto;
+      font-size: 1.2em;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .about-us-img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    Contact Section Styles .contact {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-size: 1.2em;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .submit-btn {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      text-decoration: none;
+      color: #fff;
+      background-color: #dac030;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .submit-btn:hover {
+      background-color: #4CAF50;
+    }
+
+
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .social-icon {
+      font-size: 100px;
+      color: rgb(216, 4, 4);
+      transition: color 0.2s;
+      text-decoration: none;
+      padding: 30px;
+    }
+
+    a:hover {
+
+      color: #ffd700;
+
+    }
+
+    ion-icon:hover {
+      color: blue;
+      size: 100px;
+    }
+
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .social-icon-top {
+      font-size: 35px;
+      color: rgba(49, 49, 49, 0.81);
+      transition: color 0.2s;
+      text-decoration: none;
+      padding: 30px;
+      text-shadow: #000000;
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <header>
+    <img class="about-us-img" src="com-logo.png" alt="logo" width="100"
+      height="100">
+    <h1>Co-Shell </h1>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+
+    </nav>
+  </header>
+
+
+  <section id="home" class="" style="background-image: url('');
+    background-repeat: no-repeat;
+    background-size: cover;"> 
+
+    <a class="social-icon-top" href="http://www.twitter.com/" target="_blank">
+      <ion-icon name="logo-twitter"></ion-icon>
+    </a>
+
+    <a class="social-icon-top" href="http://www.youtube.com./" target="_blank">
+      <ion-icon name="logo-youtube"></ion-icon>
+    </a>
+
+    <a class="social-icon-top" href="https://www.linkedin.com/in/pratheep-kumar-aaaa75255" target="_blank">
+      <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+
+    <a class="social-icon-top" href="https://mail.google.com/mail/u/0/" target="_blank">
+      <ion-icon name="logo-google"></ion-icon>
+    </a>
+
+    <h2> Nature's Elegance Crafted in Coconut Shells</h2>
+    <p>Explore our unique and sustainable coconut shell products, handcrafted with love and care.</p>
+    <a href="products.html" class="hero-btn">Discover More</a>
+
+  </section>
+
+
+  <section id="home" class="product-showcase" style="background-image: 
+  url(coconut-palm.jpg);
+  background-attachment: fixed; background-repeat: no-repeat; background-size:cover;" class="product-card">
+    <img src="s-l1200 (1).webp" alt="Coconut Shell Product 1" width="130"
+      height="120" style="border-radius: 20px; border-color: #f2ecec; border-style:outset;border-width:5px;">
+    <img src="images (1).jpg" alt="Coconut Shell Product 1" width="190"
+      height="190" style="border-radius: 20px; border-color: #f2ecec; border-style:outset;border-width:5px;">
+    <img src="cups1.jpg" alt="Coconut Shell Product 1" width="350" height="350"
+      style="border-radius: 20px; border-color: #f2ecec; border-style:outset;border-width:5px;">
+    <br>
+    <a href="products.html" class="cta-btn">Shop Now</a>
+    <b>
+      <p>Handcrafted coconut cups, perfect for serving your favorite meals.</p>
+    </b>
+    <br>
+    <img src="il_794xN.2836900790_nth0.jpg" alt="Coconut Shell Product 1"
+      width="500" height="500"
+      style="border-radius: 20px; border-color: #f2ecec; border-style:outset;border-width:5px;">
+    <img src="s-l1200 (1).webp" alt="Coconut Shell Product 1" width="350"
+      height="350" style="border-radius: 20px; border-color: #f2ecec; border-style:outset;border-width:5px;">
+    <img src="coconut-cup-1.png" alt="Coconut Shell Product 1" width="130"
+      height="120" style="border-radius: 20px; border-color: #f2ecec; border-style:outset;border-width:5px;">
+    <br>
+    <a href="products.html" class="cta-btn">Shop Now</a>
+
+    <br>
+    <div>
+      <h1>Decoration products</h1>
+      <b>
+        <h4>
+          <p> The ancient and intricate art form that has been practiced for centuries in many parts of the world.</p>
+        </h4>
+      </b>
+    </div>
+    <img src="images.jpg" alt="Coconut Shell Product 1" width="130"
+      height="120" style="border-radius: 20px; border-color: #f2ecec; border-style:outset;border-width:5px;">
+    <img src="images (2).jpg" alt="Coconut Shell Product 1" width="190"
+      height="190" style="border-radius: 20px; border-color: #f2ecec; border-style:outset;border-width:5px;">
+    <img src="coconut-sheel-craft-500x500.webp" alt="Coconut Shell Product 1"
+      width="350" height="350"
+      style="border-radius: 20px; border-color: #f2ecec; border-style:outset;border-width:5px;"><br>
+    <img src="s-l400.jpg" alt="Coconut Shell Product 1" width="500"
+      height="500" style="border-radius: 20px; border-color: #f2ecec; border-style:outset;border-width:5px;">
+    <img src="3fc3c9216a9cd9fe8a4349f16115b2ea.jpg"
+      alt="Coconut Shell Product 1" width="350" height="350"
+      style="border-radius: 20px; border-color: #f2ecec; border-style:outset;border-width:5px;">
+    <img src="IMG_6284-scaled.jpg" alt="Coconut Shell Product 1" width="130"
+      height="120" style="border-radius: 20px; border-color: #f2ecec; border-style:outset;border-width:5px;">
+
+  </section>
+
+
+  
+
+
+  <section id="" class="storytelling">
+    <h2>Our Story</h2>
+    <b>Discover the journey behind our commitment to crafting eco-friendly coconut shell products.</b><b><br><br>Watch
+      the video below
+      to see how we bring nature's elegance into your everyday life.</b><br><br><br>
+    <iframe class="storytelling-video" width="560" height="315" src="https://www.youtube.com/embed/coconut shell"
+      frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <section class="benefits">
+    <h2>Benefits of Our Coconut Shell Products</h2>
+    <b>
+      <div class="benefit-item">
+        <span class="benefit-icon">&#10003;</span>
+        <div class="benefit-text">Coconut shell products are eco-friendly,
+          as they are made from a renewable resource, promoting sustainability.</div>
+      </div>
+
+      <div class="benefit-item">
+        <span class="benefit-icon">&#10003;</span>
+        <div class="benefit-text">These products often have natural antibacterial properties,
+          making them hygienic and suitable for various applications.</div>
+      </div>
+
+      <div class="benefit-item">
+        <span class="benefit-icon">&#10003;</span>
+        <div class="benefit-text">Coconut shell items are lightweight and durable,
+          providing a practical and long-lasting alternative to conventional materials.</div>
+      </div>
+
+      <div class="benefit-item">
+        <span class="benefit-icon">&#10003;</span>
+        <div class="benefit-text">The production of coconut shell products typically involves minimal processing,
+          reducing environmental impact.</div>
+      </div>
+
+   
+    </b>
+  </section>
+
+  <section class="cta">
+    <h2>Experience Nature's Elegance in Your Home</h2>
+    <p class="cta-text">Transform your living space with our sustainable and stylish coconut shell products. Join us in
+      embracing nature's beauty.</p>
+    <a href="products.html" class="cta-btn">Shop Now</a>
+  </section>
+
+
+  <section class="about-us">
+    <h2>About Us</h2>
+    <p class="about-us-text"><b>At Coconut Shell Products, we are passionate about creating sustainable and eco-friendly
+        products that bring nature's elegance into your home. Our journey began with a vision to promote environmental
+        consciousness and celebrate the beauty of coconut shells.</b></p>
+    <img class="about-us-img" src="com-logo.png" alt="About Us Image"
+      width="100" height="100">
+  </section>
+
+  
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+
+  <section>
+
+    <div>
+      <h2>Contact Us</h2>
+
+      <p>Explore the world of Co-Shell and make sustainable choices a part of your lifestyle. For inquiries,
+        collaborations, or to place an order, contact us at <a href="mailto:gpratheepkumar0805@gmail.com">gpratheepkumar0805@gmail.com</a>.
+      </p>
+
+      <p>Contact us through our social media channels:</p>
+
+
+      <a class="social-icon" href="http://www.twitter.com/" target="_blank">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </a>
+
+      <a class="social-icon" href="http://www.youtube.com./" target="_blank">
+        <ion-icon name="logo-youtube"></ion-icon>
+      </a>
+
+      <a class="social-icon" href="https://www.linkedin.com/in/pratheep-kumar-aaaa75255" target="_blank">
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </a>
+
+      <a class="social-icon" href="https://mail.google.com/mail/u/0/" target="_blank">
+        <ion-icon name="logo-google"></ion-icon>
+      </a>
+
+    </div>
+  </section>
+
+
+  <footer>
+    <p>&copy; 2023 Co-Shell</p>
+  </footer>
+
+
+</body>
+
+</html>
